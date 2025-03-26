@@ -1,0 +1,14 @@
+# IDE
+
+.vscode/
+.idea/
+
+# Зависимости
+
+node_modules/
+dist/
+
+# Системные файлы
+
+.DS_Store
+\*.log
