@@ -255,7 +255,7 @@ svg * {
   --radius-12: 0.75rem;
   --radius-circle: 50%;
   --radius-pill: 32rem;
-  --border-main: 0.0625rem solid var(--color-black-15);
+  --border-main: 0.0625rem solid var(--color-dark-15);
   --letter-003: -0.03em;
   --container-width: 100rem;
   --container-padding-X: 1rem;
@@ -304,7 +304,7 @@ body {
   font-family: var(--font-family-base);
   color: var(--color-gray-50);
   letter-spacing: var(--letter-003);
-  background-color: var(--color-black-08);
+  background-color: var(--color-dark-08);
 }
 
 h1,
