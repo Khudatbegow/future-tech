@@ -3,3 +3,9 @@
 @use "variables";
 @use "utils";
 @use "globals";
+
+@use "./blocks/header/icon";
+@use "./blocks/header/logo";
+@use "./blocks/header/button";
+@use "./blocks/header/burger-button";
+@use "./blocks/header/header";
