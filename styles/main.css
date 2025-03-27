@@ -248,14 +248,10 @@ svg * {
   --medium: 500;
   --semi-bold: 600;
   --bold: 700;
-  --radius-4: 0.25rem;
-  --radius-6: 0.375rem;
-  --radius-8: 0.5rem;
-  --radius-10: 0.625rem;
-  --radius-12: 0.75rem;
   --radius-circle: 50%;
   --radius-pill: 32rem;
   --border-main: 0.0625rem solid var(--color-dark-15);
+  --gradient: linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%);
   --letter-003: -0.03em;
   --container-width: 100rem;
   --container-padding-X: 1rem;
@@ -655,6 +651,85 @@ button[aria-label]::before {
     max-width: 18.75rem;
     align-self: center;
   }
+}
+
+.badge {
+  display: inline-flex;
+  padding: clamp(0.125rem, 0.0931372549rem + 0.1307189542vw, 0.25rem) clamp(0.625rem, 0.5612745098rem + 0.2614379085vw, 0.875rem);
+  border-radius: 0.375rem;
+  color: var(--color-light);
+  background: linear-gradient(var(--color-dark-10), var(--color-dark-10)) padding-box, var(--gradient) border-box;
+  border: 0.0625rem solid transparent;
+  font-size: 1rem;
+}
+@media (width <= 90.06125rem) {
+  .badge {
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.soc1als__list {
+  display: flex;
+  column-gap: 1.25rem;
+}
+@media (width <= 90.06125rem) {
+  .soc1als {
+    column-gap: 0.875rem;
+  }
+}
+.soc1als__item {
+  display: flex;
+}
+.soc1als__link {
+  color: var(--color-light);
+}
+
+.footer {
+  color: var(--color-dark-40);
+}
+.footer__body {
+  padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+  border-bottom: var(--border-main);
+}
+.footer__menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: flex-start;
+  column-gap: clamp(1.25rem, 0.2941176471rem + 3.9215686275vw, 5rem);
+}
+.footer__menu-column {
+  display: grid;
+  row-gap: clamp(1rem, 0.681372549rem + 1.3071895425vw, 2.25rem);
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(0.5rem, 0.3406862745rem + 0.6535947712vw, 1.125rem);
+}
+.footer__menu-item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.footer__extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding-block: 2.5rem;
+}
+@media (width <= 90.06125rem) {
+  .footer__extra {
+    padding-block: 1.5rem;
+  }
+}
+.footer__extra-menu-list {
+  display: flex;
+}
+.footer__extra-menu-item:not(:last-child)::after {
+  content: "|";
+  margin-inline: 0.6875rem;
 }
 
 /*# sourceMappingURL=main.css.map */
