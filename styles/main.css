@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /**
   Нормализация блочной модели
  */
@@ -180,7 +179,6 @@ svg * {
    которые предпочитают их не использовать
   */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   ::before,
   ::after {
@@ -190,7 +188,6 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/inter/Inter-Bold.woff2") format("woff2");
@@ -198,7 +195,6 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/inter/Inter-Medium.woff2") format("woff2");
@@ -206,7 +202,6 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/inter/Inter-Regular.woff2") format("woff2");
@@ -214,7 +209,6 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/inter/Inter-SemiBold.woff2") format("woff2");
@@ -222,7 +216,6 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Kumbh Sans";
   src: url("../assets/fonts/kumbhSans/KumbhSans-Medium.woff2") format("woff2");
@@ -230,7 +223,6 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Kumbh Sans";
   src: url("../assets/fonts/kumbhSans/KumbhSans-Regular.woff2") format("woff2");
@@ -238,7 +230,6 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-
 :root {
   --color-light: #ffffff;
   --color-dark: #000000;
@@ -271,8 +262,7 @@ svg * {
   --transition-duration: 0.2s;
   --shadow: 0 0 0 0.5rem #191919;
 }
-
-@media (width <=90.06125rem) {
+@media (width <= 90.06125rem) {
   :root {
     --container-width: 80rem;
   }
@@ -297,7 +287,7 @@ svg * {
   overflow: hidden !important;
 }
 
-@media (width <=47.99875rem) {
+@media (width <= 47.99875rem) {
   .hidden-mobile {
     display: none !important;
   }
@@ -401,19 +391,16 @@ svg * {
 a {
   color: inherit;
 }
-
 @media (any-hover: hover) {
   a:hover {
     color: var(--color-accent);
   }
 }
-
 @media (any-hover: none) {
   a:active {
     color: var(--color-accent);
   }
 }
-
 a[class] {
   text-decoration: none;
 }
@@ -423,3 +410,5 @@ a[class] {
   outline-offset: 0.25rem;
   transition-duration: 0s !important;
 }
+
+/*# sourceMappingURL=main.css.map */
