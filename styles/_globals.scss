@@ -5,13 +5,20 @@ html {
     overflow: hidden;
   }
 }
+
 body {
   @include fluid-text(18, 14);
 
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family-base);
   color: var(--color-gray-50);
   letter-spacing: var(--letter-003);
   background-color: var(--color-dark-08);
+}
+
+.main {
+  flex-grow: 1;
 }
 
 h1,
