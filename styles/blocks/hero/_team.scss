@@ -1,0 +1,34 @@
+@use "../../helpers/" as *;
+
+.team {
+  --persone-image-size: #{rem(60)};
+
+  display: flex;
+  padding: rem(10);
+  background-color: var(--color-dark-10);
+  border-radius: var(--radius-pill);
+
+  @include laptop {
+    --persone-image-size: #{rem(50)};
+    padding: rem(8);
+  }
+
+  @include tablet {
+    --persone-image-size: #{rem(40)};
+  }
+
+  &__persone {
+    width: var(--persone-image-size);
+    background-color: var(--color-dark-15);
+    border-radius: var(--radius-circle);
+    border: 2px solid var(--color-dark-40);
+
+    @include laptop {
+      border-width: rem(1);
+    }
+
+    &:not(:first-child) {
+      margin-left: calc(var(--persone-image-size) / 4 * -1);
+    }
+  }
+}
