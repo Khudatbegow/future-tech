@@ -4,6 +4,23 @@
   display: grid;
   row-gap: rem(30);
 
+  @include laptop {
+    row-gap: rem(20);
+  }
+
+  &__image {
+    @include laptop {
+      width: rem(40);
+    }
+
+    @include mobile {
+      width: rem(30);
+    }
+  }
+  @include mobile {
+    row-gap: rem(14);
+  }
+
   &__link {
     --circle-size: #{rem(52)};
     --circle-margin-left: #{rem(20)};
@@ -12,6 +29,16 @@
     padding-right: calc(var(--circle-size) + var(--circle-size));
     display: grid;
     row-gap: rem(4);
+
+    @include laptop {
+      --circle-size: #{rem(44)};
+      --circle-margin-left: #{rem(14)};
+      row-gap: rem(2);
+    }
+
+    @include mobile {
+      --circle-size: #{rem(40)};
+    }
 
     &::after {
       @include square(var(--circle-size));
